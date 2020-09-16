@@ -1,0 +1,25 @@
+---
+name: h99
+extra-source-files: readme.rst
+dependencies: base
+library:
+  source-dirs: src
+  ghc-options: -Wall
+tests:
+  one:
+    main: Spec.hs
+    source-dirs: test/one
+    dependencies: [h99, hspec, QuickCheck]
+  two:
+    main: Spec.hs
+    source-dirs: test/two
+    dependencies: [h99, hspec, QuickCheck]
+  three:
+    main: Spec.hs
+    source-dirs: test/three
+    dependencies: [h99, hspec, QuickCheck]
+  four:
+    main: Spec.hs
+    source-dirs: test/four
+    dependencies: [h99, hspec, QuickCheck]
+...
