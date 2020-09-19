@@ -1,4 +1,4 @@
-module Four where
+module Four (myLength) where
 
 myLength :: [a] -> Int
 myLength [] = 0
