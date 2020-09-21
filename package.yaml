@@ -4,7 +4,6 @@ extra-source-files: readme.rst
 dependencies: base
 library:
   source-dirs: src
-  ghc-options: -Wall
 tests:
   one:
     main: Spec.hs
@@ -21,5 +20,9 @@ tests:
   four:
     main: Spec.hs
     source-dirs: test/four
+    dependencies: [h99, hspec, QuickCheck]
+  five:
+    main: Spec.hs
+    source-dirs: test/five
     dependencies: [h99, hspec, QuickCheck]
 ...
