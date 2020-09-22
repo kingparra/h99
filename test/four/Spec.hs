@@ -1,4 +1,3 @@
-module Spec where
 import Test.Hspec (hspec, describe, it, shouldBe)
 import Test.QuickCheck 
 import Four (myLength)
