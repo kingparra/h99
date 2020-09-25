@@ -1,5 +1,5 @@
 import Test.Hspec (hspec, describe, it, shouldBe)
-import Test.QuickCheck 
+import Test.QuickCheck
 import Five (myReverse)
 
 main = hspec $ do
@@ -10,4 +10,3 @@ main = hspec $ do
       myReverse "A man, a plan, a canal, panama!" `shouldBe` "!amanap ,lanac a ,nalp a ,nam A"
     it "reverses any arbitrary list" $ do
       property $ \x xs -> myReverse ((x :: Char) : (xs :: [Char])) == reverse (x:xs)
-
