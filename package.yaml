@@ -37,4 +37,12 @@ tests:
     main: Spec.hs
     source-dirs: test/eight
     dependencies: [h99, hspec, QuickCheck]
+  nine:
+    main: Spec.hs
+    source-dirs: test/nine
+    dependencies: [h99, hspec, QuickCheck]
+  ten:
+    main: Spec.hs
+    source-dirs: test/ten
+    dependencies: [h99, hspec, QuickCheck]
 ...
